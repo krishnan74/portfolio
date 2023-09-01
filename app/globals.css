@@ -25,3 +25,159 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body, html{
+  height: 100%;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Courier+Prime:wght@100;200;300;400;500;600;700&display=swap);
+
+body {
+font-family: 'Courier Prime', monospace;
+background-color: black;
+}
+
+
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  color: white;
+  align-items: center;
+}
+
+.links{
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+  color: white;
+}
+
+a, a:link, a:active, a:visited{
+  color: white;
+  text-decoration: none;
+}
+
+#pic{
+  height: 500px;
+  width: 500px;
+
+}
+
+
+
+
+
+.project_card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.project_title{
+  font-size: x-large;
+  font-weight: bolder;
+}
+*{
+  border: 1px  red;
+}
+
+.tech_stack_div{
+  display: flex;
+
+  flex-direction: column;
+}
+
+.tech_stacks{
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.tech_stack_card{
+  color: inherit;
+  border: 1px solid grey;
+  padding: 8px 20px;
+  border-radius: 9px;
+}
+
+.tech_stack_card:hover{
+  color: white;
+  border: 1px solid grey;
+  background-color: rgb(95, 95, 95);
+  padding: 8px 20px;
+  border-radius: 9px;
+}
+
+.project_card{
+  padding: 30px;
+  width: 300px;
+  height: 300px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 1px rgb(201, 201, 201);
+}
+
+.project_card:hover{
+  transform: scale(1.1);
+  transform: translateY(-40px);
+  border: 1px solid grey;
+  border-radius: 10px;
+  transition: .3s;
+  background-color: rgb(201, 201, 201);
+  color: black;
+  box-shadow: 0px 0px 0px 0px rgb(201, 201, 201);
+}
+
+.my_name{
+  font-size: 70px; font-weight: bold; margin-bottom: 30px;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.tech_stacks::-webkit-scrollbar{
+  width: 0px;
+}
+
+.project_div::-webkit-scrollbar {
+  height: 0px;
+}
+
+/* Track */
+.project_div::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.project_div::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.project_div::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
